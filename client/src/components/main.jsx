@@ -8,9 +8,12 @@ import GameContainer from './gameContainer'
 // eg <Component prop={mapStateToProps}/>
 // the connect function attaches these to a presentation component.
 
+//can be used to map specific parts of state to main component
 function mapStateToProps(state){
 	return {
-		test: state.test
+		test: state.test,
+		player: state.player,
+		output: state.output
 	}
 }
 

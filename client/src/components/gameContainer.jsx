@@ -1,8 +1,8 @@
 import React from 'react'
 
 import PlayerObject from './playerObject';
-import ConsoleWindow from './consoleInput';
-import ConsoleOuput from './consoleOutput';
+import Input from './input';
+import Output from './output';
 
 // a React component like any other. check the console log in browser to see what is being handed down as props.
 
@@ -18,12 +18,13 @@ export default class GameContainer extends React.Component {
 
 	render(){
 		console.log(this.props)
+		
 		return (
 			<div>
 
-				<PlayerObject/>
-				<ConsoleWindow/>
-				<ConsoleOuput/>
+				<PlayerObject player={this.props.player}/>
+				<Input/>
+				<Output output={this.props.output}/>
 
 				<form ref="addNumberForm" onSubmit={this.handleAddNumber.bind(this)} autoComplete='off'>
 					<input hidden autoComplete='false'/>
