@@ -1,5 +1,9 @@
 import React from 'react'
 
+import PlayerObject from './playerObject';
+import ConsoleWindow from './consoleInput';
+import ConsoleOuput from './consoleOutput';
+
 // a React component like any other. check the console log in browser to see what is being handed down as props.
 
 export default class GameContainer extends React.Component {
@@ -16,6 +20,11 @@ export default class GameContainer extends React.Component {
 		console.log(this.props)
 		return (
 			<div>
+
+				<PlayerObject/>
+				<ConsoleWindow/>
+				<ConsoleOuput/>
+
 				<form ref="addNumberForm" onSubmit={this.handleAddNumber.bind(this)} autoComplete='off'>
 					<input hidden autoComplete='false'/>
 					<input ref='number' type="text" name="array-input"/>
