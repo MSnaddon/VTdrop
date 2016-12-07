@@ -1,19 +1,16 @@
 {
-  "name": "game",
+  "name": "reduxpractice",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Scruffz/VTdrop.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Scruffz/VTdrop/issues"
+  "dependencies": {
+    "express": "^4.14.0"
   },
-  "homepage": "https://github.com/Scruffz/VTdrop#readme"
+  "devDependencies": {},
+  "description": ""
 }
