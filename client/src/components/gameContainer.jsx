@@ -22,9 +22,9 @@ export default class GameContainer extends React.Component {
 		return (
 			<div>
 
-				<PlayerObject player={this.props.player}/>
-				<Input/>
-				<Output output={this.props.output}/>
+				<PlayerObject player={ this.props.player }/>
+				<Input runCode={ this.props.runCode }/>
+				<Output output={ this.props.output }/>
 
 				<form ref="addNumberForm" onSubmit={this.handleAddNumber.bind(this)} autoComplete='off'>
 					<input hidden autoComplete='false'/>
