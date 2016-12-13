@@ -7,17 +7,9 @@ export function runCode(consoleInput){
 	}
 }
 
-// Redux practice Actions
-
-export function extendArray(){
+export function outputString(outputString){
 	return {
-		type: 'EXTENDARRAY'
-	}
-}
-
-export function addSpecificToArray(number){
-	return {
-		type: 'ADDTOARRAY',
-		number
+		type: 'OUTPUTSTRING',
+		outputString
 	}
 }

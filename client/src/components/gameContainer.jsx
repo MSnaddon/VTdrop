@@ -17,7 +17,7 @@ export default class GameContainer extends React.Component {
 	}
 
 	render(){
-		console.log(this.props)
+		console.log(this)
 		
 		return (
 			<div>
@@ -25,14 +25,6 @@ export default class GameContainer extends React.Component {
 				<PlayerObject player={ this.props.player }/>
 				<Input runCode={ this.props.runCode }/>
 				<Output output={ this.props.output }/>
-
-				<form ref="addNumberForm" onSubmit={this.handleAddNumber.bind(this)} autoComplete='off'>
-					<input hidden autoComplete='false'/>
-					<input ref='number' type="text" name="array-input"/>
-					<input type="submit" hidden/>
-				</form>
-				<button onClick={this.props.extendArray}>Extend array</button>
-				<p>Array = [ {this.props.test.join(", ")} ]</p>
 			</div>
 			)
 	}

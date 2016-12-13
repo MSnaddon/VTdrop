@@ -13,7 +13,7 @@ export default class ConsoleOutput extends React.Component {
 
 		return (
 			<section id='output-window'>
-				<h3>This is the console out</h3>
+				<p>Console</p>
 				{outputFeed}
 			</section>
 		)

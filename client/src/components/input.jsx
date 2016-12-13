@@ -16,14 +16,13 @@ export default class ConsoleInput extends React.Component {
 	render(){
 		return (
 			<section id='input-window'>
-
+				<p>Coding</p>
 				<form ref="codeInput" onSubmit={this.handleCodeSubmit.bind(this)} autoComplete='off'>
 					<input hidden autoComplete='false'/>
 					<input ref='code' type="text" name="array-input"/>
 					<input type="submit" hidden/>
 				</form>
 
-				<h2>This is the console in</h2>
 			</section>
 		)
 	}

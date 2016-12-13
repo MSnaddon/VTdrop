@@ -11,7 +11,6 @@ import GameContainer from './gameContainer'
 //can be used to map specific parts of state to main component
 function mapStateToProps(state){
 	return {
-		test: state.test,
 		player: state.player,
 		output: state.output
 	}
