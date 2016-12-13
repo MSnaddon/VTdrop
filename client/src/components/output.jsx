@@ -15,6 +15,7 @@ export default class ConsoleOutput extends React.Component {
 			<section id='output-window'>
 				<p>Console</p>
 				{outputFeed}
+				<hr/>
 			</section>
 		)
 	}

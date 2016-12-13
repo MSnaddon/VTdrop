@@ -9,6 +9,8 @@ export default class ConsoleInput extends React.Component {
 			// if the test is sucessful they can make the appropiate changes to the state.
 			// if the test is unsucessful then another action can be written to change the state to indicate the player is a pillock.
 			this.props.runCode(this.refs.code.value);
+
+			//reset form when submitted
 			this.refs.codeInput.reset();
 		}
 	}
@@ -16,12 +18,13 @@ export default class ConsoleInput extends React.Component {
 	render(){
 		return (
 			<section id='input-window'>
-				<p>Coding</p>
+				<p>Input</p>
 				<form ref="codeInput" onSubmit={this.handleCodeSubmit.bind(this)} autoComplete='off'>
 					<input hidden autoComplete='false'/>
 					<input ref='code' type="text" name="array-input"/>
 					<input type="submit" hidden/>
 				</form>
+				<hr/>
 
 			</section>
 		)

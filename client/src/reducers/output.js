@@ -1,3 +1,14 @@
 export default function output(state = [], action){
-	return state
+	switch(action.type){
+		case 'OUTPUTSTRING':
+			return [` >  ${action.outputString}`, ...state]
+
+		case 'RUNCODE':
+			return [` >> ${action.consoleInput}`, ...state]
+
+		default:
+			return state
+	}
+
+
 }

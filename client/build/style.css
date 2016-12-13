@@ -1,3 +1,11 @@
-#app-container{
+body{
+	padding:0px;
+	margin:0px;
+}
+
+#main{
 	background: dodgerblue ;
+	height:100%;
+	width:100%;
+	padding:20px;
 }
